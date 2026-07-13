@@ -17,7 +17,6 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:.
 #topbar button{pointer-events:auto;background:rgba(251,246,239,.75);backdrop-filter:blur(8px);border:1px solid var(--gold-soft);color:var(--ink);border-radius:30px;padding:7px 14px;font-family:'Jost';font-size:12px;letter-spacing:.14em;cursor:pointer;transition:.3s}
 #topbar button:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
 
-/* INTRO ENVELOPE */
 #intro{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 40%,#efe2cf,#e2d0b6);display:flex;align-items:center;justify-content:center;transition:opacity 1.1s ease,visibility 1.1s;perspective:1400px}
 #intro.gone{opacity:0;visibility:hidden}
 .env{position:relative;width:min(86vw,420px);aspect-ratio:1.5/1;cursor:pointer;transition:transform 1s ease,opacity 1s ease}
@@ -41,7 +40,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:.
 @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
 canvas#burst{position:fixed;inset:0;z-index:99;pointer-events:none}
 
-.hero{height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;background:url('hero.jpg') center/cover;position:relative}
+.hero{height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;background:url('hero.JPG') center/cover;position:relative}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,22,14,.4),rgba(30,22,14,.2) 40%,rgba(30,22,14,.6))}
 .hero-inner{position:relative;z-index:2;color:#fff;padding:20px}
 .hero h1{font-size:clamp(46px,11vw,104px);line-height:1.1;text-shadow:0 4px 30px rgba(0,0,0,.45)}
@@ -64,9 +63,9 @@ canvas#burst{position:fixed;inset:0;z-index:99;pointer-events:none}
 .cd-lab{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
 
 .venue{height:100vh;min-height:560px;display:flex;align-items:flex-end;justify-content:center;background-size:cover;background-position:center;position:relative;text-align:center}
-#v1{background-image:url('bride.jpg')}
-#v2{background-image:url('ceremony.jpg')}
-#v3{background-image:url('hall.jpg')}
+#v1{background-image:url('bride.JPG')}
+#v2{background-image:url('ceremony.JPG')}
+#v3{background-image:url('hall.JPG')}
 .venue::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,22,14,.2),rgba(30,22,14,.65))}
 .v-card{position:relative;z-index:2;margin-bottom:clamp(40px,10vh,90px);background:rgba(251,246,239,.92);backdrop-filter:blur(6px);border:1px solid var(--gold-soft);padding:34px clamp(28px,6vw,54px);max-width:min(88vw,440px)}
 .v-card h3{font-size:clamp(26px,5.6vw,40px);color:var(--ink);margin-bottom:6px}

@@ -42,14 +42,14 @@ canvas#burst{position:fixed;inset:0;z-index:99;pointer-events:none}
 
 .hero{height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;background:url('hero.JPG') center/cover;position:relative}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,22,14,.4),rgba(30,22,14,.2) 40%,rgba(30,22,14,.6))}
-.hero-inner{position:relative;z-index:2;color:#fff;padding:20px}
-.hero h1{font-size:clamp(46px,11vw,104px);line-height:1.1;text-shadow:0 4px 30px rgba(0,0,0,.45)}
+.hero-inner{position:relative;z-index:2;color:#fff;padding:44px 30px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(20,14,8,.55) 0%,rgba(20,14,8,.35) 45%,rgba(20,14,8,0) 75%)}
+.hero h1{font-size:clamp(46px,11vw,104px);line-height:1.1;text-shadow:0 4px 30px rgba(0,0,0,.55)}
 .hero h1 .amp{color:var(--gold-soft);font-style:italic;font-size:.72em;display:inline-block;margin:0 .12em}
 .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:26px 0}
 .divider .line{width:60px;height:1px;background:var(--gold-soft)}
 .divider .dot{width:6px;height:6px;border:1px solid var(--gold-soft);transform:rotate(45deg)}
-.hero .savedate{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px}
-.hero .date{font-size:clamp(18px,4vw,26px);letter-spacing:.35em;font-weight:300}
+.hero .savedate{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero .date{font-size:clamp(18px,4vw,26px);letter-spacing:.35em;font-weight:300;text-shadow:0 2px 14px rgba(0,0,0,.6)}
 .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#fff;font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.85}
 .scroll-cue span{display:block;margin:8px auto 0;width:1px;height:34px;background:linear-gradient(#fff,transparent);animation:drop 1.8s infinite}
 @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
@@ -94,8 +94,7 @@ canvas#burst{position:fixed;inset:0;z-index:99;pointer-events:none}
 .rsvp-msg{margin-top:18px;text-align:center;font-size:14px;min-height:20px;color:var(--gold)}
 
 .foot{background:var(--ink);color:var(--champagne);text-align:center;padding:clamp(50px,9vw,80px) 22px}
-.foot .amp{font-family:'Cormorant Garamond';font-size:56px;color:var(--gold-soft)}
-.foot .nm{letter-spacing:.35em;text-transform:uppercase;font-size:13px;margin-top:10px;font-weight:300}
+.foot .nm{letter-spacing:.35em;text-transform:uppercase;font-size:13px;font-weight:300}
 .foot .dt{margin-top:16px;letter-spacing:.3em;font-size:12px;opacity:.7}
 .foot .admin-link{margin-top:30px;font-size:10px;letter-spacing:.2em;opacity:.35;cursor:pointer;text-transform:uppercase}
 .foot .admin-link:hover{opacity:.7}
@@ -223,7 +222,6 @@ table.rt th{background:var(--champagne);font-weight:500;font-size:11px;text-tran
 </section>
 
 <footer class="foot">
-  <div class="amp">Ա և Ս</div>
   <div class="nm" data-hy="Արեգ և Սյուզի" data-en="Areg &amp; Syuzi">Արեգ և Սյուզի</div>
   <div class="dt">05 · 09 · 2026</div>
   <div class="admin-link" id="adminOpen">Admin</div>

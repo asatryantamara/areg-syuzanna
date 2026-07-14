@@ -22,9 +22,8 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:.
 .env{position:relative;width:min(86vw,420px);aspect-ratio:1.5/1;cursor:pointer;transition:transform 1s ease,opacity 1s ease}
 .env.opened{transform:scale(1.06);opacity:0;pointer-events:none}
 .env-back{position:absolute;inset:0;background:linear-gradient(150deg,#fbf6ef,#efe2cf);border:1px solid #d9c4a2;border-radius:8px;box-shadow:0 40px 90px -40px rgba(120,90,50,.55)}
-.env-letter{position:absolute;left:6%;right:6%;top:12%;bottom:8%;background:linear-gradient(160deg,#fffdf9,#f6efe2);border:1px solid #e6d7bf;box-shadow:0 4px 18px rgba(120,90,50,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:transform 1s ease .2s}
+.env-letter{position:absolute;left:6%;right:6%;top:12%;bottom:8%;background:linear-gradient(160deg,#fffdf9,#f6efe2);border:1px solid #e6d7bf;box-shadow:0 4px 18px rgba(120,90,50,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;transition:transform 1s ease .2s}
 .env.opened .env-letter{transform:translateY(-16%)}
-.env-letter .amp{font-family:'Cormorant Garamond';font-size:clamp(38px,10vw,58px);color:var(--gold);letter-spacing:.06em}
 .env-letter .sub{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-soft)}
 .env-letter .dt{font-size:13px;letter-spacing:.3em;color:var(--ink);margin-top:2px}
 .flap{position:absolute;left:0;right:0;top:0;height:52%;background:linear-gradient(155deg,#f6ecdb,#e8d6ba);border:1px solid #d9c4a2;border-bottom:none;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1.1s cubic-bezier(.6,0,.3,1);z-index:4;border-radius:8px 8px 0 0}
@@ -32,8 +31,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:.
 .body-front{position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(160deg,#f3e7d3,#e5d2b4);border:1px solid #d9c4a2;clip-path:polygon(0 40%,50% 100%,100% 40%,100% 100%,0 100%);z-index:5;border-radius:0 0 8px 8px}
 .wax{position:absolute;top:46%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 38% 34%,#d8b877,#b08d4f 55%,#8f6f38);box-shadow:0 6px 16px rgba(120,80,20,.45),inset 0 2px 6px rgba(255,240,200,.4);z-index:7;display:flex;align-items:center;justify-content:center;transition:transform .5s ease,opacity .5s ease;cursor:pointer}
 .wax::after{content:'';position:absolute;inset:5px;border-radius:50%;border:1px dashed rgba(255,245,220,.5)}
-.wax .init{font-family:'Cormorant Garamond';font-size:22px;color:#fff7e6;letter-spacing:.04em;position:relative;z-index:2}
-.wax .heart{position:absolute;bottom:12px;font-size:10px;color:#fff7e6;opacity:.85}
+.wax .init{font-family:'Cormorant Garamond';font-size:24px;color:#fff7e6;letter-spacing:.04em;position:relative;z-index:2}
 .env.opened .wax{transform:translate(-50%,-50%) scale(.4) rotate(-18deg);opacity:0}
 .tap-hint{position:absolute;bottom:-46px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.3em;color:var(--ink-soft);text-transform:uppercase;animation:pulse 2s infinite}
 .env.opened .tap-hint{opacity:0}
@@ -128,13 +126,12 @@ table.rt th{background:var(--champagne);font-weight:500;font-size:11px;text-tran
   <div class="env" id="env">
     <div class="env-back"></div>
     <div class="env-letter">
-      <div class="amp">Ա և Ս</div>
       <div class="sub" data-hy="Հրավիրված եք" data-en="You're Invited">Հրավիրված եք</div>
       <div class="dt">05 · 09 · 2026</div>
     </div>
     <div class="body-front"></div>
     <div class="flap"></div>
-    <div class="wax" id="wax"><span class="init">A&amp;S</span><span class="heart">♥</span></div>
+    <div class="wax" id="wax"><span class="init">A&amp;S</span></div>
     <div class="tap-hint" data-hy="Հպեք կնիքին" data-en="Tap the seal">Հպեք կնիքին</div>
   </div>
 </div>
